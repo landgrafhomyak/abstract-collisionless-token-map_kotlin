@@ -7,6 +7,7 @@ internal open class _CommonTokenNode<NODE: _CommonTokenNode<NODE>>(
     _dict_tree: _TokenNodeRedBlackTreeSubst<NODE>
 ) {
     internal var dict_leftSubtreeSize: ULong = 0u
+    internal var _dict_wholeSubtreeSize: ULong = 1u
     internal var _dict_parent: NODE? = _dict_tree.PARENT_INITIALIZER
     internal var _dict_left: NODE? = _dict_tree.LEFT_CHILD_INITIALIZER
     internal var _dict_right: NODE? = _dict_tree.RIGHT_CHILD_INITIALIZER

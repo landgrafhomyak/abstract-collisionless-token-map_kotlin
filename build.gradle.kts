@@ -43,7 +43,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation("ru.landgrafhomyak.collections:abstract-red-black-tree:1.1")
+                implementation("ru.landgrafhomyak.collections:abstract-red-black-tree:1.2")
                 implementation("ru.landgrafhomyak.collections:abstract-red-black-priority-queue:1.0")
             }
         }
