@@ -9,8 +9,11 @@ abstract class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGene
     @Suppress("PropertyName", "RemoveRedundantQualifierName")
     open class ExpirableTokenNode<NODE : ExpirableTokenNode<NODE>> internal constructor(
         owner: AbstractExpirableTokenGenerator<NODE>,
-        val expirationTime: ULong
+        expirationTime: ULong
     ) : AbstractTokenGenerator.TokenNode<NODE>(owner) {
+        var expirationTime: ULong = expirationTime
+            internal set
+
         internal var _expire_parent: NODE? = owner._expire_tree.PARENT_INITIALIZER
         internal var _expire_left: NODE? = owner._expire_tree.LEFT_CHILD_INITIALIZER
         internal var _expire_right: NODE? = owner._expire_tree.RIGHT_CHILD_INITIALIZER
@@ -28,6 +31,20 @@ abstract class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGene
     override fun unlink(node: NODE) {
         this._expire_tree.link(node)
         super.unlink(node)
+    }
+
+    override fun clear() {
+        super.clear()
+        this._expire_tree.clear()
+    }
+
+    val closestTokenForExpiration: NODE?
+        get() = this._expire_tree.maxPriorityNodeOrNull
+
+    fun changeExpirationTime(node: NODE, newTime: ULong) {
+        this._expire_tree.unlink(node)
+        node.expirationTime = newTime
+        this._expire_tree.link(node)
     }
 
 

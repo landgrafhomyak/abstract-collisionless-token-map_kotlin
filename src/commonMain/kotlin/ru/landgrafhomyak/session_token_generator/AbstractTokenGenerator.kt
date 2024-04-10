@@ -65,6 +65,10 @@ abstract class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NO
         this._dict_tree.unlink(node)
     }
 
+    open fun clear() {
+        this._dict_tree.clear()
+    }
+
     @Suppress("ClassName")
     private class _TokenNodeRedBlackTreeSubst<NODE : TokenNode<NODE>> : AbstractRedBlackTree<NODE>() {
         override fun _getColor(node: NODE): Color =
