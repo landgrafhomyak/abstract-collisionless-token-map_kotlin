@@ -1,1 +1,1 @@
-rootProject.name = "session-token-generator"
+rootProject.name = "abstract-token-generator"

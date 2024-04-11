@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.session_token_generator
+package ru.landgrafhomyak.abstract_token_generator
 
 import ru.landgrafhomyak.collections.AbstractRedBlackTree
 import ru.landgrafhomyk.collections.AbstractRedBlackPriorityQueue

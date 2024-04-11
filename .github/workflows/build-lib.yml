@@ -14,5 +14,5 @@ jobs:
       - uses: landgrafhomyak/maven2github-redirector/build-mp-lib@actions-v1.0
         with:
           group: ru.landgrafhomyak
-          name: session-token-generator
+          name: abstract-token-generator
           version: "1.0"

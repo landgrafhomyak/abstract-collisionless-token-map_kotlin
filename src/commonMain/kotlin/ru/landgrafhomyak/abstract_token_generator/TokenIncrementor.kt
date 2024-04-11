@@ -1,4 +1,4 @@
-package ru.landgrafhomyak.session_token_generator
+package ru.landgrafhomyak.abstract_token_generator
 
 interface TokenIncrementor<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
     fun increase(by: ULong)
