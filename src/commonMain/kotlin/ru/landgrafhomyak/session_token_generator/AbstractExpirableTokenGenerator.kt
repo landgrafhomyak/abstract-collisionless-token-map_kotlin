@@ -4,13 +4,15 @@ import ru.landgrafhomyak.collections.AbstractRedBlackTree
 import ru.landgrafhomyk.collections.AbstractRedBlackPriorityQueue
 
 @Suppress("PrivatePropertyName")
-abstract class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGenerator.ExpirableTokenNode<NODE>> : AbstractTokenGenerator<NODE>() {
+class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGenerator.ExpirableTokenNode<NODE>> {
 
-    @Suppress("PropertyName", "RemoveRedundantQualifierName")
-    open class ExpirableTokenNode<NODE : ExpirableTokenNode<NODE>> internal constructor(
+    private val _token_gen = AbstractTokenGenerator<NODE>()
+
+    @Suppress("PropertyName")
+    open class ExpirableTokenNode<NODE : ExpirableTokenNode<NODE>>(
         owner: AbstractExpirableTokenGenerator<NODE>,
         expirationTime: ULong
-    ) : AbstractTokenGenerator.TokenNode<NODE>(owner) {
+    ) : AbstractTokenGenerator.TokenNode<NODE>(owner._token_gen) {
         var expirationTime: ULong = expirationTime
             internal set
 
@@ -22,19 +24,19 @@ abstract class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGene
 
     private val _expire_tree = ExpirableTokenNodePriorityQueueSubst<NODE>()
 
-    override fun link(incrementor: TokenIncrementor<NODE>): NODE {
-        val node = super.link(incrementor)
+    fun link(incrementor: TokenIncrementor<NODE>): NODE {
+        val node = this._token_gen.link(incrementor)
         this._expire_tree.link(node)
         return node
     }
 
-    override fun unlink(node: NODE) {
-        this._expire_tree.link(node)
-        super.unlink(node)
+    fun unlink(node: NODE) {
+        this._expire_tree.unlink(node)
+        this._token_gen.unlink(node)
     }
 
-    override fun clear() {
-        super.clear()
+    fun clear() {
+        this._token_gen.clear()
         this._expire_tree.clear()
     }
 

@@ -3,9 +3,9 @@ package ru.landgrafhomyak.session_token_generator
 import ru.landgrafhomyak.collections.AbstractRedBlackTree
 
 @Suppress("PrivatePropertyName")
-abstract class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
+class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
     @Suppress("PropertyName")
-    open class TokenNode<NODE : TokenNode<NODE>> internal constructor(
+    open class TokenNode<NODE : TokenNode<NODE>>(
         owner: AbstractTokenGenerator<NODE>
     ) {
         internal var dict_leftSubtreeSize: ULong = 0u
@@ -19,7 +19,7 @@ abstract class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NO
     private val _dict_tree = _TokenNodeRedBlackTreeSubst<NODE>()
 
 
-    open fun link(incrementor: TokenIncrementor<NODE>): NODE {
+    fun link(incrementor: TokenIncrementor<NODE>): NODE {
         val root = this._dict_tree.root
 
         if (root == null) {
@@ -61,11 +61,11 @@ abstract class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NO
         return node
     }
 
-    open fun unlink(node: NODE) {
+    fun unlink(node: NODE) {
         this._dict_tree.unlink(node)
     }
 
-    open fun clear() {
+    fun clear() {
         this._dict_tree.clear()
     }
 
