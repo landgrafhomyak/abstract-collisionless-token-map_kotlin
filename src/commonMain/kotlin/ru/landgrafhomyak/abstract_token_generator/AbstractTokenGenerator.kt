@@ -23,7 +23,7 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
         val root = this._dict_tree.root
 
         if (root == null) {
-            val node = incrementor.finalize()
+            val node = incrementor.exportNode()
             this._dict_tree.root = node
             this._dict_tree.balanceAfterLinking(node)
             return node
@@ -39,7 +39,7 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
                     continue
                 }
 
-                node = incrementor.finalize()
+                node = incrementor.exportNode()
                 ptr._dict_left = node
                 break
             } else {
@@ -50,7 +50,7 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
                     continue
                 }
 
-                node = incrementor.finalize()
+                node = incrementor.exportNode()
                 ptr._dict_right = node
                 break
             }

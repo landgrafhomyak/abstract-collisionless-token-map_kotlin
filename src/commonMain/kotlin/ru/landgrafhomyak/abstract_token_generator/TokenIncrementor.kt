@@ -5,5 +5,5 @@ interface TokenIncrementor<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
 
     fun isLowerThan(node: NODE): Boolean
 
-    fun finalize(): NODE
+    fun exportNode(): NODE
 }
