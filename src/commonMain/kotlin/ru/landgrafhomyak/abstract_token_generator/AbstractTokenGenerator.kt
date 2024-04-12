@@ -17,7 +17,9 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
     }
 
     private val _dict_tree = _TokenNodeRedBlackTreeSubst<NODE>()
-
+    @Suppress("MemberVisibilityCanBePrivate")
+    var tokensLinked: ULong = 0u
+        private set
 
     fun link(incrementor: TokenIncrementor<NODE>): NODE {
         val root = this._dict_tree.root
@@ -58,15 +60,18 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
 
         this._dict_tree.increaseSubtreeSizes(node)
         this._dict_tree.balanceAfterLinking(node)
+        this.tokensLinked++
         return node
     }
 
     fun unlink(node: NODE) {
         this._dict_tree.unlink(node)
+        this.tokensLinked--
     }
 
     fun clear() {
         this._dict_tree.clear()
+        this.tokensLinked = 0u
     }
 
     @Suppress("ClassName")

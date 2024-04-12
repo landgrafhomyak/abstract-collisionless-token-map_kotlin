@@ -5,7 +5,6 @@ import ru.landgrafhomyk.collections.AbstractRedBlackPriorityQueue
 
 @Suppress("PrivatePropertyName")
 class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGenerator.ExpirableTokenNode<NODE>> {
-
     private val _token_gen = AbstractTokenGenerator<NODE>()
 
     @Suppress("PropertyName")
@@ -23,6 +22,9 @@ class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGenerator.Exp
     }
 
     private val _expire_tree = ExpirableTokenNodePriorityQueueSubst<NODE>()
+
+    val tokensLinked: ULong by this._token_gen::tokensLinked
+
 
     fun link(incrementor: TokenIncrementor<NODE>): NODE {
         val node = this._token_gen.link(incrementor)
