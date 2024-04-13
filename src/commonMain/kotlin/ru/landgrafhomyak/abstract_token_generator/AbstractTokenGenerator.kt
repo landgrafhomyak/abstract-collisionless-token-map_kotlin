@@ -4,7 +4,7 @@ import ru.landgrafhomyak.collections.AbstractRedBlackTree
 
 @Suppress("PrivatePropertyName")
 class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
-    @Suppress("PropertyName")
+    @Suppress("PropertyName", "LeakingThis")
     open class TokenNode<NODE : TokenNode<NODE>>(
         owner: AbstractTokenGenerator<NODE>
     ) {
@@ -14,11 +14,17 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
         internal var _dict_left: NODE? = owner._dict_tree.LEFT_CHILD_INITIALIZER
         internal var _dict_right: NODE? = owner._dict_tree.RIGHT_CHILD_INITIALIZER
         internal var _dict_color: AbstractRedBlackTree.Color = owner._dict_tree.COLOR_INITIALIZER
+
+        val tokensBstLeftChild by this::_dict_left
+        val tokensBstRightChild by this::_dict_right
     }
 
     private val _dict_tree = _TokenNodeRedBlackTreeSubst<NODE>()
+
+    val tokensBstRoot: NODE? by this._dict_tree::root
+
     @Suppress("MemberVisibilityCanBePrivate")
-    var tokensLinked: ULong = 0u
+    var tokensLinkedCount: ULong = 0u
         private set
 
     fun link(incrementor: TokenIncrementor<NODE>): NODE {
@@ -60,18 +66,18 @@ class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
 
         this._dict_tree.increaseSubtreeSizes(node)
         this._dict_tree.balanceAfterLinking(node)
-        this.tokensLinked++
+        this.tokensLinkedCount++
         return node
     }
 
     fun unlink(node: NODE) {
         this._dict_tree.unlink(node)
-        this.tokensLinked--
+        this.tokensLinkedCount--
     }
 
     fun clear() {
         this._dict_tree.clear()
-        this.tokensLinked = 0u
+        this.tokensLinkedCount = 0u
     }
 
     @Suppress("ClassName")
