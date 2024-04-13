@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-collisionless-token-map/1.0/abstract-collisionless-token-map-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "abstract-collisionless-token-map",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map.klib",
+          "url": "abstract-collisionless-token-map-watchosarm32-1.0.klib",
+          "size": 21616,
+          "sha512": "a278644cb5fb130741730511ac97d630daa4b737f6d2814af61a79ed6757c3c083aeae562f510a336ac6850e98f2da97a46b86a8eb479aa3055acd1b38ad3c14",
+          "sha256": "b6a239ffc2f353448debffb73964bfafa8934bf04c5bd514f00dfde96ce770ec",
+          "sha1": "d93be87659f28c7ec6a0aff807348414ba069968",
+          "md5": "55d009c08bb63b779143aa66cb28a20d"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-watchosarm32-1.0-sources.jar",
+          "url": "abstract-collisionless-token-map-watchosarm32-1.0-sources.jar",
+          "size": 3822,
+          "sha512": "f8da3740ea5f15aaca94f3150a73503be7f0d88c4c9d5fddc403850a3c06354fa6a3e659142733ba069b11bab43877ccef7ec0a3ae804e17949bd41756b9fab2",
+          "sha256": "c229c00f574c4c8607fe8fbb252eeca877b53cc90416aa9eb5f809d72c89bb2e",
+          "sha1": "5ba2f09fe551c52f6dcb975b48b8f9abf134a5f0",
+          "md5": "473f2b3f5864811f166860cf492f9330"
+        }
+      ]
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-watchosarm32-1.0-metadata.jar",
+          "url": "abstract-collisionless-token-map-watchosarm32-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "02f0e6c88e3095c687603460e41e0a6747533d53b293b84218059bc174f702837a5bd647cf214af268075b1c5cd8f8fc8bf0a052445999f1d110a46ba2737006",
+          "sha256": "2c1535b30b9ee01dac17462dfe38f8df58c7589ef3b2ac7000ddd68b713accb1",
+          "sha1": "69e4bd6f5d8e29fd4f903964402f4934b3ad6ece",
+          "md5": "b7f6e0f6c8c5acc39a207067b6be62e0"
+        }
+      ]
+    }
+  ]
+}

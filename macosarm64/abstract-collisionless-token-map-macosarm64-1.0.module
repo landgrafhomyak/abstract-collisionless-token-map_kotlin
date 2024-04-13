@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-collisionless-token-map/1.0/abstract-collisionless-token-map-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "abstract-collisionless-token-map",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map.klib",
+          "url": "abstract-collisionless-token-map-macosarm64-1.0.klib",
+          "size": 21597,
+          "sha512": "f15477c8be712874d581e79fa8b0b6052f2921f1f5bc214b25d044a54515fcb27016edbb50bdb95cbef09e07265028c331c4133ad66839174d05dd2434ce6028",
+          "sha256": "43b6b13753b2f134104f6f53e7349c1338efecd49b0613aaa2067c471b6ae9b6",
+          "sha1": "da12210c5aeec66dcb2576a289b28855d2a09e62",
+          "md5": "fd3c9d28a607654f0da191ce301be272"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-macosarm64-1.0-sources.jar",
+          "url": "abstract-collisionless-token-map-macosarm64-1.0-sources.jar",
+          "size": 3822,
+          "sha512": "f8da3740ea5f15aaca94f3150a73503be7f0d88c4c9d5fddc403850a3c06354fa6a3e659142733ba069b11bab43877ccef7ec0a3ae804e17949bd41756b9fab2",
+          "sha256": "c229c00f574c4c8607fe8fbb252eeca877b53cc90416aa9eb5f809d72c89bb2e",
+          "sha1": "5ba2f09fe551c52f6dcb975b48b8f9abf134a5f0",
+          "md5": "473f2b3f5864811f166860cf492f9330"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-macosarm64-1.0-metadata.jar",
+          "url": "abstract-collisionless-token-map-macosarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "ac4fefa3bb4c1bcd153f523350655ce11867704361c767dd304d5dcf0a214aa0fb08319ed857ff9e5f24aaed84ed421585a53fced738a4d3306b94c467726165",
+          "sha256": "93dbfc1fbf4950cf6fa7f1a0628547509d50564de4c53a2126034409a7daf36f",
+          "sha1": "34b262414a1e4a341583e410511fd9f00b9ed7dd",
+          "md5": "1d3fd73d982d6a14b21e39df347f8105"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-collisionless-token-map/1.0/abstract-collisionless-token-map-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "abstract-collisionless-token-map",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map.klib",
+          "url": "abstract-collisionless-token-map-iossimulatorarm64-1.0.klib",
+          "size": 21666,
+          "sha512": "5ccda70c3828564cba09866e86cb46c2d4b3456e1d7ae6500ca5ea4d1b811c3ebfc0ed74bda7d2281c7950e6fe43727ead2a806567ff4da61743c136011b1063",
+          "sha256": "c1eb3af5868f9fdff86943697d7313f7801e4df2459529dd3b2726c50bf0f86f",
+          "sha1": "f8a98515527969340dedc1ee4ba55c24e4484878",
+          "md5": "4ee03f640acaea2bc1e3f80003e96a49"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-iossimulatorarm64-1.0-sources.jar",
+          "url": "abstract-collisionless-token-map-iossimulatorarm64-1.0-sources.jar",
+          "size": 3822,
+          "sha512": "f8da3740ea5f15aaca94f3150a73503be7f0d88c4c9d5fddc403850a3c06354fa6a3e659142733ba069b11bab43877ccef7ec0a3ae804e17949bd41756b9fab2",
+          "sha256": "c229c00f574c4c8607fe8fbb252eeca877b53cc90416aa9eb5f809d72c89bb2e",
+          "sha1": "5ba2f09fe551c52f6dcb975b48b8f9abf134a5f0",
+          "md5": "473f2b3f5864811f166860cf492f9330"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-iossimulatorarm64-1.0-metadata.jar",
+          "url": "abstract-collisionless-token-map-iossimulatorarm64-1.0-metadata.jar",
+          "size": 261,
+          "sha512": "dcda7cff2675d79bad28fe991c927cc95150be2c41b756f67d1a7074f00292b8df56469730a3741168bc3f48beb0225628a97c630532b3919e63a6064bf4b308",
+          "sha256": "fa7e99effb1d1198066d7a790cc447d48345fcddc64fdce27e1f680661f3c18f",
+          "sha1": "c4d02a8a28e8d7e3f73d2b532ae27415cda1f80e",
+          "md5": "241213d4f9ac9c35204165b8580f0ce2"
+        }
+      ]
+    }
+  ]
+}

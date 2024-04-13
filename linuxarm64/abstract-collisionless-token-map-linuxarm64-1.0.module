@@ -1,0 +1,85 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../abstract-collisionless-token-map/1.0/abstract-collisionless-token-map-1.0.module",
+    "group": "ru.landgrafhomyak",
+    "module": "abstract-collisionless-token-map",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map.klib",
+          "url": "abstract-collisionless-token-map-linuxarm64-1.0.klib",
+          "size": 21598,
+          "sha512": "db43fbb53e57c4c04e2ade2fce60ac2892ffcc1de73079dcb647adc37b35bd2404834987622afa748fba4db5fd42f2e4b8e79f975d638347c836d95a72d877db",
+          "sha256": "bc16c89a91be6db60fe3ba427b002d82a58ad364d0db8e106fbadff369018616",
+          "sha1": "fbfb502a8befedf8dbe7c0fe773704e9d8973eed",
+          "md5": "a3597a7a45f5dbc5f638b9af065d27f1"
+        }
+      ]
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-linuxarm64-1.0-sources.jar",
+          "url": "abstract-collisionless-token-map-linuxarm64-1.0-sources.jar",
+          "size": 3822,
+          "sha512": "f8da3740ea5f15aaca94f3150a73503be7f0d88c4c9d5fddc403850a3c06354fa6a3e659142733ba069b11bab43877ccef7ec0a3ae804e17949bd41756b9fab2",
+          "sha256": "c229c00f574c4c8607fe8fbb252eeca877b53cc90416aa9eb5f809d72c89bb2e",
+          "sha1": "5ba2f09fe551c52f6dcb975b48b8f9abf134a5f0",
+          "md5": "473f2b3f5864811f166860cf492f9330"
+        }
+      ]
+    }
+  ]
+}

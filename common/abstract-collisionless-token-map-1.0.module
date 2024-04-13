@@ -1,0 +1,896 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ru.landgrafhomyak",
+    "module": "abstract-collisionless-token-map",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.7"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.9.0"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-tree",
+          "version": {
+            "requires": "1.2"
+          }
+        },
+        {
+          "group": "ru.landgrafhomyak.collections",
+          "module": "abstract-red-black-priority-queue",
+          "version": {
+            "requires": "1.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-metadata-1.0.jar",
+          "url": "abstract-collisionless-token-map-1.0.jar",
+          "size": 4946,
+          "sha512": "d64749f8d072975fc0771362638212f07f80cd8c35570eeed47703976fcc39d8302aae9bb2044c4ec4323ce6fbc47aafcb073cf1019af01de8c0c4b9985f4ee3",
+          "sha256": "d92edf86eeb44f212b5978056fcd55ab8cabb563cd74a6738c2d2d9d574b5df7",
+          "sha1": "729c49f891d4640e22911c58676a46e8695a24fe",
+          "md5": "4bb74136430b9334552087dbfe3ed853"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "abstract-collisionless-token-map-kotlin-1.0-sources.jar",
+          "url": "abstract-collisionless-token-map-1.0-sources.jar",
+          "size": 3822,
+          "sha512": "f8da3740ea5f15aaca94f3150a73503be7f0d88c4c9d5fddc403850a3c06354fa6a3e659142733ba069b11bab43877ccef7ec0a3ae804e17949bd41756b9fab2",
+          "sha256": "c229c00f574c4c8607fe8fbb252eeca877b53cc90416aa9eb5f809d72c89bb2e",
+          "sha1": "5ba2f09fe551c52f6dcb975b48b8f9abf134a5f0",
+          "md5": "473f2b3f5864811f166860cf492f9330"
+        }
+      ]
+    },
+    {
+      "name": "androidNativeArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativearm32/1.0/abstract-collisionless-token-map-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativearm32/1.0/abstract-collisionless-token-map-androidnativearm32-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativearm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativearm64/1.0/abstract-collisionless-token-map-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativearm64/1.0/abstract-collisionless-token-map-androidnativearm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativearm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativex64/1.0/abstract-collisionless-token-map-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativex64/1.0/abstract-collisionless-token-map-androidnativex64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativex64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativex86/1.0/abstract-collisionless-token-map-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "androidNativeX86SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "android_x86",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-androidnativex86/1.0/abstract-collisionless-token-map-androidnativex86-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-androidnativex86",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosarm64/1.0/abstract-collisionless-token-map-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosarm64/1.0/abstract-collisionless-token-map-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosarm64/1.0/abstract-collisionless-token-map-iosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iossimulatorarm64/1.0/abstract-collisionless-token-map-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iossimulatorarm64/1.0/abstract-collisionless-token-map-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iossimulatorarm64/1.0/abstract-collisionless-token-map-iossimulatorarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iossimulatorarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosx64/1.0/abstract-collisionless-token-map-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosx64/1.0/abstract-collisionless-token-map-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-iosx64/1.0/abstract-collisionless-token-map-iosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-iosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-js/1.0/abstract-collisionless-token-map-js-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-js/1.0/abstract-collisionless-token-map-js-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-js/1.0/abstract-collisionless-token-map-js-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-js",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-jvm/1.0/abstract-collisionless-token-map-jvm-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-jvm/1.0/abstract-collisionless-token-map-jvm-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-jvm/1.0/abstract-collisionless-token-map-jvm-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-jvm",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-linuxarm64/1.0/abstract-collisionless-token-map-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-linuxarm64/1.0/abstract-collisionless-token-map-linuxarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-linuxarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-linuxx64/1.0/abstract-collisionless-token-map-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "linuxX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-linuxx64/1.0/abstract-collisionless-token-map-linuxx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-linuxx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosarm64/1.0/abstract-collisionless-token-map-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosarm64/1.0/abstract-collisionless-token-map-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosarm64/1.0/abstract-collisionless-token-map-macosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosx64/1.0/abstract-collisionless-token-map-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosx64/1.0/abstract-collisionless-token-map-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-macosx64/1.0/abstract-collisionless-token-map-macosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-macosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-mingwx64/1.0/abstract-collisionless-token-map-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "mingwX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-mingwx64/1.0/abstract-collisionless-token-map-mingwx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-mingwx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosarm64/1.0/abstract-collisionless-token-map-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosarm64/1.0/abstract-collisionless-token-map-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosarm64/1.0/abstract-collisionless-token-map-tvosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosx64/1.0/abstract-collisionless-token-map-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosx64/1.0/abstract-collisionless-token-map-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "tvosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "tvos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-tvosx64/1.0/abstract-collisionless-token-map-tvosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-tvosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm32/1.0/abstract-collisionless-token-map-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm32/1.0/abstract-collisionless-token-map-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm32MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm32",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm32/1.0/abstract-collisionless-token-map-watchosarm32-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm32",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm64/1.0/abstract-collisionless-token-map-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm64/1.0/abstract-collisionless-token-map-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosarm64/1.0/abstract-collisionless-token-map-watchosarm64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosarm64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64ApiElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosx64/1.0/abstract-collisionless-token-map-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosx64/1.0/abstract-collisionless-token-map-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosx64",
+        "version": "1.0"
+      }
+    },
+    {
+      "name": "watchosX64MetadataElements-published",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.category": "library",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../abstract-collisionless-token-map-watchosx64/1.0/abstract-collisionless-token-map-watchosx64-1.0.module",
+        "group": "ru.landgrafhomyak",
+        "module": "abstract-collisionless-token-map-watchosx64",
+        "version": "1.0"
+      }
+    }
+  ]
+}
