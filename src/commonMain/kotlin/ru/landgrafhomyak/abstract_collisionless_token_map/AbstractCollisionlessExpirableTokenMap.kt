@@ -1,17 +1,17 @@
-package ru.landgrafhomyak.abstract_token_generator
+package ru.landgrafhomyak.abstract_collisionless_token_map
 
 import ru.landgrafhomyak.collections.AbstractRedBlackTree
 import ru.landgrafhomyk.collections.AbstractRedBlackPriorityQueue
 
 @Suppress("PrivatePropertyName")
-class AbstractExpirableTokenGenerator<NODE : AbstractExpirableTokenGenerator.ExpirableTokenNode<NODE>> {
-    private val _token_gen = AbstractTokenGenerator<NODE>()
+class AbstractCollisionlessExpirableTokenMap<NODE : AbstractCollisionlessExpirableTokenMap.ExpirableTokenNode<NODE>> {
+    private val _token_gen = AbstractCollisionlessTokenMap<NODE>()
 
     @Suppress("PropertyName", "LeakingThis")
     open class ExpirableTokenNode<NODE : ExpirableTokenNode<NODE>>(
-        owner: AbstractExpirableTokenGenerator<NODE>,
+        owner: AbstractCollisionlessExpirableTokenMap<NODE>,
         expirationTime: ULong
-    ) : AbstractTokenGenerator.TokenNode<NODE>(owner._token_gen) {
+    ) : AbstractCollisionlessTokenMap.TokenNode<NODE>(owner._token_gen) {
         var expirationTime: ULong = expirationTime
             internal set
 

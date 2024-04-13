@@ -1,12 +1,12 @@
-package ru.landgrafhomyak.abstract_token_generator
+package ru.landgrafhomyak.abstract_collisionless_token_map
 
 import ru.landgrafhomyak.collections.AbstractRedBlackTree
 
 @Suppress("PrivatePropertyName")
-class AbstractTokenGenerator<NODE : AbstractTokenGenerator.TokenNode<NODE>> {
+class AbstractCollisionlessTokenMap<NODE : AbstractCollisionlessTokenMap.TokenNode<NODE>> {
     @Suppress("PropertyName", "LeakingThis")
     open class TokenNode<NODE : TokenNode<NODE>>(
-        owner: AbstractTokenGenerator<NODE>
+        owner: AbstractCollisionlessTokenMap<NODE>
     ) {
         internal var dict_leftSubtreeSize: ULong = 0u
         internal var _dict_wholeSubtreeSize: ULong = 1u

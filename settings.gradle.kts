@@ -1,1 +1,1 @@
-rootProject.name = "abstract-token-generator"
+rootProject.name = "abstract-collisionless-token-map"
